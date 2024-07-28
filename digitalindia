@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Digital India</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            scroll-behavior: smooth; /* Smooth scrolling */
+            background-color: #F8F9FA; /* Light background */
+        }
+
+        .header {
+            padding: 80px;
+            text-align: center;
+            background: #FF9933; /* Saffron */
+            color: white;
+        }
+
+        .header h1 {
+            font-size: 40px;
+        }
+
+        .navbar {
+            overflow: hidden;
+            background-color: #138808; /* Green */
+        }
+
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+
+        .navbar a:hover {
+            background-color: #000080; /* Dark Blue */
+            color: white;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .side {
+            flex: 30%;
+            background-color: #FFFFFF; /* White */
+            padding: 20px;
+        }
+
+        .main {
+            flex: 70%;
+            background-color: #FFFFFF; /* White */
+            padding: 20px;
+        }
+
+        .fakeimg {
+            background-color: #E0E0E0;
+            width: 100%;
+            padding: 20px;
+            text-align: center; /* Center text inside fake image */
+            border: 1px solid #ccc; /* Border around fake image */
+        }
+
+        .footer {
+            padding: 20px;
+            text-align: center;
+            background: #333;
+            color: white;
+        }
+
+        @media screen and (max-width: 700px) {
+            .row {
+                flex-direction: column;
+            }
+        }
+
+        @media screen and (max-width: 400px) {
+            .navbar a {
+                float: none;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <h1>Digital India</h1>
+    <p>Empowering the Nation through Technology</p>
+</div>
+
+<div class="navbar">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#initiatives">Initiatives</a>
+    <a href="#contact">Contact</a>
+</div>
+
+<div id="home" class="row">
+    <div class="side">
+        <h2>About Digital India</h2>
+        <h5>Overview:</h5>
+        <div class="fakeimg" style="height:200px;">Image</div>
+        <p>Digital India is a campaign launched by the Government of India to ensure the country's services are made available to citizens electronically by improving online infrastructure and increasing Internet connectivity.</p>
+        <h3>Key Aspects</h3>
+        <p>The program aims to transform India into a digitally empowered society and knowledge economy.</p>
+        <div class="fakeimg" style="height:60px;">Image</div><br>
+        <div class="fakeimg" style="height:60px;">Image</div><br>
+        <div class="fakeimg" style="height:60px;">Image</div>
+    </div>
+    <div id="about" class="main">
+        <h2>Initiatives Under Digital India</h2>
+        <h5>Creating Opportunities, July 2024</h5>
+        <div class="fakeimg" style="height:200px;">Image</div>
+        <p>Digital India includes initiatives like e-Governance, e-Kranti, and the promotion of digital literacy.</p>
+        <p>These efforts are aimed at providing high-speed internet access in rural areas, creating digital infrastructure, and offering government services online to reduce paperwork and improve efficiency.</p>
+        <br>
+        <h2>Our Services</h2>
+        <h5>Connecting the Nation, July 2024</h5>
+        <div class="fakeimg" style="height:200px;">Image</div>
+        <p>We provide various services to help citizens connect with government initiatives and resources.</p>
+        <p>These include online payment systems, e-learning platforms, and digital healthcare solutions. Our goal is to make these services easily accessible to all citizens, regardless of location or socio-economic status.</p>
+    </div>
+</div>
+
+<div id="contact" class="footer">
+    <h2>Contact Us</h2>
+    <form action="/submit_form" method="post">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name"><br><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br><br>
+        <label for="address">Address:</label><br>
+        <textarea id="address" name="address" rows="4" cols="50"></textarea><br><br>
+        <input type="submit" value="Submit">
+    </form>
+    <p>&copy; 2024 Digital India | Empowering the Nation through Technology</p>
+    <p>Follow us on:
+        <a href="#">Facebook</a> |
+        <a href="#">Twitter</a> |
+        <a href="#">Instagram</a>
+    </p>
+</div>
+
+</body>
+</html>
